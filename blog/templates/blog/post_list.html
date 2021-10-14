@@ -6,9 +6,9 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">//popup
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>//popup
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>//popup
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet"><!--picturePopup-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script><!--picturePopup-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script><!--picturePopup-->
     </head>
     <body>
         <div class="page-header">
@@ -31,21 +31,62 @@
             </div>
         </div>
         
-        <span id="textins">
-        <p>アニメ番組表</p>
-        </span>
+        <span id="textins">アニメ番組表</span>
+        
         <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. こんにちは！ よろしくお願いします！ </p>
-        </div>
-
-        <div>
-            <p>公開日: 2014/06/14, 12:14</p>
+            <p>更新日: 2021/10/14, 12:14</p>
             <h2><a href="">2番目の投稿</a></h2>
             <p> こんにちは！ よろしくお願いします！ </p>
         </div>
         <a href="{% static "images/pa.png"%}"data-lightbox="group"><img src="{% static "images/pa.png"%}" width="100" height="100"></a>
+    
+<!--list start-->
+<div class="items">
+  <!--Arcane-->
+<div class="item">
+<div class="box1">
+<img src="https://img.animatetimes.com/2019/10/5da7c1eea979f_6ee3e5a30c2900df7ac7a464bd655ad9.jpg"width="100%">
+<br>
+    <font class="abb1">Arcane</font>
+</div> </div>
+
+  <!--異世界食堂２-->
+<div class="item">
+<div class="box1">
+<img src="https://img2.animatetimes.com/2021/07/6102374e44bd1_ca5423b930bee29b9c4fd19a81dd8865.jpg"width="100%">
+<br>
+    <font class="abb1">Arcane</font>
+</div> </div> 
+  
+  
+</div></div>
+    
+    <span id="policy">免責事項</span>
+    <a href="" class="btn btn-c btn--green btn--cubic"><i class="fa fas fa-envelope"></i>お問い合わせはこちら</a>
+    
+    
+    <!-- 一言コメントフォーム START ----->
+<br>
+<table border="0" cellspacing="0" cellpadding="1">
+  <tr>
+    <td>
+<form method="POST" action="comment.php?rep=1" target="com">
+<span style="font-size:18px;font-weight:100;color:#ff0000">■ </span><b>一言コメントをどうぞ！</b>（100字まで）<br>
+<input type="text" id="comment" name="comment" size="80" style="width:535;border:1px solid #00ccff">
+<input type="submit" id="submit" value=" 送信 " style="width:54"> 
+    </td></form>
+  </tr>
+  <tr>
+    <td>
+<div id="commentv" style="font-size:13px;line-height:15px;color:#666699;width:580px;height:160px;border:1px solid #00ccff;padding:8px;overflow-y:scroll;display:none;"></div>
+<iframe name="com" src="comment.php" id="com" style="width:301px;height:201px;frameborder:0px;border:0px;padding:0px;overflow:hidden;display:none;"></iframe>
+    </td>
+  </tr>
+</table>
+<br>
+<!-- 一言コメントフォーム END ----->
+    
+    
     </body>
 </html>
 

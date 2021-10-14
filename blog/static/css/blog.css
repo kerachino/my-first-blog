@@ -61,6 +61,7 @@ h1, h2, h3, h4 {
 
 span#textins {
 font-family: monospace; 
+color : #FF0080;
 width: 11ch;
 border-right: .08em solid;
 overflow: hidden;
@@ -70,3 +71,111 @@ animation: typing 5s steps(11, end), caret .5s step-end infinite;
 }
 /*以上colorfulbo*/
 
+/*table*/
+.items{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+align-items:center;
+}
+.item{
+box-sizing: border-box;
+border:0px solid #ccc;
+margin: 0;
+padding: 0px;
+width: 20%;
+}
+@media screen and (max-width:689px){
+.item{
+margin:0 0px 0px 0;
+width: calc(0% - 0px / 2);
+}
+.item:nth-child(2n){
+margin-right:0;
+}
+.item:nth-child(3n){
+margin-right:0px;
+}
+.item:nth-child(6){
+margin-right:0;
+}
+}
+
+/*他*/
+.abb1 {
+font-size:90%;
+background-color:#FFFFFF;
+color:#000000;
+}
+/*box*/
+.box1 {
+display:inline-block;
+border-radius: 0px;
+border: 4px double #151515; 
+font-size: 100%; 
+padding: 1px;
+}
+
+/*以上box*/
+
+
+span#policy {
+  position: relative;
+  padding: 15px;
+  background-image: -webkit-linear-gradient(315deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+  background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+  color: #FFFFFF;
+  font-size:15px;
+}
+
+policy span {
+  display: block;
+  padding: 1rem 2rem;
+  background: #fff;
+}
+
+/*以上見出しデザイン*/
+
+
+a.btn--green {
+  color: #fff;
+  background-color: #094;
+}
+
+a.btn--green:hover {
+  color: #fff;
+  background: #00a349;
+}
+
+a.btn--green.btn--cubic {
+  border-bottom: 5px solid #00662d;
+}
+
+a.btn--green.btn--cubic:hover {
+  margin-top: 3px;
+  border-bottom: 2px solid #00662d;
+}
+
+a.btn-c {
+  font-size: 2rem;
+  position: relative;
+  padding: 1.5rem 3rem 1.5rem 2rem;
+  border-radius: 100vh;
+}
+
+a.btn-c i.fa {
+  margin-right: 1rem;
+}
+
+a.btn-c:before {
+  font-family: 'Font Awesome 5 Free';
+  font-size: 1.6rem;
+  line-height: 1;
+  position: absolute;
+  top: calc(50% - .8rem);
+  right: 1rem;
+  margin: 0;
+  padding: 0;
+  content: '\f054';
+}
+/*以上formデザイン*/
